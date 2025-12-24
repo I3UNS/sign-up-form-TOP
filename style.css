@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 1px;
+    /* font-weight: 500; */
+    /* font-style: normal; */
+    overflow: hidden;
+
+    min-width: 200px;
+}
+
+
+#container, #img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    height: 100%;
+    width: 60vw;
+}
+
+#photo-credits, #photo-credits > a{
+    color: white;
+    font-weight: bold;
+}
+
+#photo-credits{
+    background-color: rgba(148, 148, 148, 0.2);
+    padding: 10px;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+}
+
+#sign-form{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+
+    padding: 40px;
+}
+
+#sign-form > p{
+    font-size: 1.2em;
+}
+
+#input-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#create-account{
+    padding: 10px;
+    background-color: rgba(153, 153, 153, 0.867);
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 1px outset black;
+}
+
+#sign-form > p > a{
+    color: black;
+}
+
+#sign-form > p > a:hover{
+    color: green;
+    text-decoration: none;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+input{
+    padding: 15px;
+    border-radius: 0.35rem;
+    border: 1px solid lightslategrey;
+    background-color: whitesmoke;
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 1px 5px 5px blue;
+}
+
+#user-password:focus, #confirm-password:focus{
+    border: 1px solid red;
+    box-shadow: 1px 5px 5px red;
+}
+
+#logo{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 10%;
+}
