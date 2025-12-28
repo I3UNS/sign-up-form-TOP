@@ -3,25 +3,35 @@
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     letter-spacing: 1px;
+    font-size: 1.3rem;
     /* font-weight: 500; */
     /* font-style: normal; */
     overflow: hidden;
-
     min-width: 200px;
+    box-sizing: border-box;
 }
 
 
-#container, #img-container{
+#container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: auto;
 }
 
-img{
-    height: 100%;
-    width: 60vw;
+#img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 #photo-credits, #photo-credits > a{
     color: white;
@@ -42,9 +52,8 @@ img{
     gap: 40px;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-
     padding: 40px;
+    width: 150%;
 }
 
 #sign-form > p{
@@ -54,15 +63,25 @@ img{
 #input-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border-radius: 1.2rem;
+    box-shadow: 0px 15px 20px lightblue;
+    padding: 30px;
     gap: 25px;
     justify-content: center;
     align-items: center;
 }
 
+#input-form > p{
+    grid-column: span 2;
+    font-size: 2rem;
+}
+
 #create-account{
     padding: 10px;
-    background-color: rgba(153, 153, 153, 0.867);
-    font-size: 1rem;
+    background-color: rgba(88, 106, 18, 0.867);
+    color: white;
+    font-size: 1.2rem;
+    width: 40%;
     border-radius: 1rem;
     border: 1px outset black;
 }
@@ -81,10 +100,14 @@ label{
 }
 
 input{
-    padding: 15px;
+    padding: 5px;
     border-radius: 0.35rem;
     border: 1px solid lightslategrey;
     background-color: whitesmoke;
+}
+
+input:hover, button:hover{
+    cursor: pointer;
 }
 
 input:focus{
@@ -97,9 +120,24 @@ input:focus{
     box-shadow: 1px 5px 5px red;
 }
 
+#logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 80px;
+    padding: 30px;
+    bottom: 30%;
+    min-width: 100%;
+}
+
 #logo{
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 10%;
+    height: 240px;
+}
+
+#logo-text{
+    color: whitesmoke;
+    font-size: 3rem;
+    letter-spacing: 10px;
 }
